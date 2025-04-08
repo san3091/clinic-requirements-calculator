@@ -107,7 +107,6 @@
       // Weekly needs (rounded up since we only use whole hours)
       const relNeededPerWeek = Math.ceil(relNeededTotal / remainingWeeks);
       const nonRelNeededPerWeek = Math.ceil(nonRelNeededTotal / remainingWeeks);
-      const totalNeededPerWeek = Math.ceil(totalNeededTotal / remainingWeeks);
 
       // Adjust each case's contribution based on cancellations/no-shows (each case contributes 1 hour per week)
       const effectiveHoursPerCase = 1 - (cancellationPercent / 100);
